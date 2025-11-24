@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <div class="weather-card hidden" id="weatherCard">
+            <h2 id="cityName">Weather App</h2>
+
+            <div class="circle">
+                <div class="temp" id="temperature">--°C</div>
+            </div>
+
+            <p class="condition" id="condition">---</p>
+
+            <div class="details">
+                <p><strong>Humidity:</strong> <span id="humidity">--%</span></p>
+                <p><strong>Wind:</strong> <span id="wind">-- km/h</span></p>
+            </div>
+
+            <div class="extra-info">
+                <h3>City Information</h3>
+                <p><strong>Country:</strong> <span id="country">--</span></p>
+                <p><strong>Coordinates:</strong> <span id="coords">--</span></p>
+                <p><strong>Local Time:</strong> <span id="localTime">--</span></p>
+                <p><strong>Feels Like:</strong> <span id="feelsLike">--°C</span></p>
+                <p><strong>Pressure:</strong> <span id="pressure">-- hPa</span></p>
+                <p><strong>Visibility:</strong> <span id="visibility">-- km</span></p>
+                <p><strong>Sunrise:</strong> <span id="sunrise">--</span></p>
+                <p><strong>Sunset:</strong> <span id="sunset">--</span></p>
+            </div>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <p id="error" class="error"></p>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
